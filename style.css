@@ -1,0 +1,74 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #101010;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 15px;
+}
+
+.sound-btn {
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.help {
+    margin: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.game-container {
+    margin: 20px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-gap: 10px;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cell.revealed {
+    background-color: #303030;
+}
+
+.cell.mine {
+    color: red;
+}
+
+.info-bar, .bottom-panel {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+input[type=number] {
+    width: 80px;
+    padding: 5px;
+    font-size: 16px;
+}
